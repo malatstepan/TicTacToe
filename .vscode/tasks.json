@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Spustit TicTacToe",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "g++ ttt.cpp ttt_funcs.cpp -o ttt.exe; if ($LASTEXITCODE -eq 0) { .\\ttt.exe }"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
